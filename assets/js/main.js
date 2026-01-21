@@ -1,5 +1,5 @@
 /*
-	Relativity by Pixelarity
+	Spectral by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
@@ -8,8 +8,9 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$header = $('#header'),
-		$banner = $('#banner');
+		$wrapper = $('#page-wrapper'),
+		$banner = $('#banner'),
+		$header = $('#header');
 
 	// Breakpoints.
 		breakpoints({
@@ -17,8 +18,7 @@
 			large:    [ '981px',   '1280px' ],
 			medium:   [ '737px',   '980px'  ],
 			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
+			xsmall:   [ null,      '480px'  ]
 		});
 
 	// Play initial animations on page load.
@@ -28,35 +28,42 @@
 			}, 100);
 		});
 
-	// Tweaks/fixes.
+	// Mobile?
+		if (browser.mobile)
+			$body.addClass('is-mobile');
+		else {
 
-		// Polyfill: Object fit.
-			if (!browser.canUse('object-fit')) {
+			breakpoints.on('>medium', function() {
+				$body.removeClass('is-mobile');
+			});
 
-				$('.image[data-position]').each(function() {
+			breakpoints.on('<=medium', function() {
+				$body.addClass('is-mobile');
+			});
 
-					var $this = $(this),
-						$img = $this.children('img');
-
-					// Apply img as background.
-						$this
-							.css('background-image', 'url("' + $img.attr('src') + '")')
-							.css('background-position', $this.data('position'))
-							.css('background-size', 'cover')
-							.css('background-repeat', 'no-repeat');
-
-					// Hide img.
-						$img
-							.css('opacity', '0');
-
-				});
-
-			}
+		}
 
 	// Scrolly.
-		$('.scrolly').scrolly({
-			offset: function() { return $header.height() - 5; }
-		});
+		$('.scrolly')
+			.scrolly({
+				speed: 1500,
+				offset: $header.outerHeight()
+			});
+
+	// Menu.
+		$('#menu')
+			.append('<a href="#menu" class="close"></a>')
+			.appendTo($body)
+			.panel({
+				delay: 500,
+				hideOnClick: true,
+				hideOnSwipe: true,
+				resetScroll: true,
+				resetForms: true,
+				side: 'right',
+				target: $body,
+				visibleClass: 'is-menu-visible'
+			});
 
 	// Header.
 		if ($banner.length > 0
@@ -65,57 +72,12 @@
 			$window.on('resize', function() { $window.trigger('scroll'); });
 
 			$banner.scrollex({
-				bottom:		$header.outerHeight(),
+				bottom:		$header.outerHeight() + 1,
 				terminate:	function() { $header.removeClass('alt'); },
 				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
+				leave:		function() { $header.removeClass('alt'); }
 			});
 
 		}
-
-	// Banner.
-
-		// Hack: Fix flex min-height on IE.
-			if (browser.name == 'ie') {
-				$window.on('resize.ie-banner-fix', function() {
-
-					var h = $banner.height();
-
-					if (h > $window.height())
-						$banner.css('height', 'auto');
-					else
-						$banner.css('height', h);
-
-				}).trigger('resize.ie-banner-fix');
-			}
-
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			alignment: 'right',
-			hideDelay: 350,
-			baseZIndex: 100000
-		});
-
-	// Menu.
-		$('<a href="#navPanel" class="navPanelToggle">Menu</a>')
-			.appendTo($header);
-
-		$(	'<div id="navPanel">' +
-				'<nav>' +
-					$('#nav') .navList() +
-				'</nav>' +
-				'<a href="#navPanel" class="close"></a>' +
-			'</div>')
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					target: $body,
-					visibleClass: 'is-navPanel-visible',
-					side: 'right'
-				});
 
 })(jQuery);
