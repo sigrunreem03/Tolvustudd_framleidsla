@@ -4032,6 +4032,7 @@ input, select, textarea {
 .button.primary.github-button {
   background-color: #f9b765 !important;
   color: #ffffff !important;
+  border: 2px solid #ffffff !important;
 }
 
 .button.primary.github-button:hover {
