@@ -4027,3 +4027,9 @@ input, select, textarea {
   height: auto;
   border-radius: 50%;
 }
+
+/* --- GitHub button custom color --- */
+.github-button {
+  background-color: #f9b765 !important; /* GitHub svart */
+  color: #ffffff !important;
+}
