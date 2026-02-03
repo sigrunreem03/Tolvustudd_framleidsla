@@ -4029,7 +4029,11 @@ input, select, textarea {
 }
 
 /* --- GitHub button custom color --- */
-.github-button {
-  background-color: #f9b765 !important; /* GitHub svart */
+.button.primary.github-button {
+  background-color: #f9b765 !important;
   color: #ffffff !important;
+}
+
+.button.primary.github-button:hover {
+  background-color: #fba73f !important;
 }
