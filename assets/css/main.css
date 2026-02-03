@@ -6,11 +6,6 @@
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
-.image.centered {
-  width: 85%;
-  max-width: 900px;
-  margin: 20px auto;   /* miðjar alltaf */
-}
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -4001,3 +3996,34 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+.about-image img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* --- About section layout --- */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
