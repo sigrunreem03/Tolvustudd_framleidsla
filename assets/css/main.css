@@ -4038,3 +4038,25 @@ input, select, textarea {
 .button.primary.github-button:hover {
   background-color: #fba73f !important;
 }
+
+/* --- Centered image layout --- */
+
+.image-row {
+    display: flex;
+    justify-content: center;   /* miðjar allt */
+    align-items: flex-start;
+    gap: 4rem;                 /* bil milli mynda */
+    flex-wrap: wrap;           /* fer í nýja línu ef þarf */
+    margin: 3rem 0;
+}
+
+.image-row figure {
+    width: 280px;              /* fast breidd */
+    text-align: center;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
