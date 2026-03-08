@@ -4071,12 +4071,16 @@ input, select, textarea {
 
 .inline-img.right {
   float: right;
-  margin: 0.2rem 0 1rem 1.2rem;
+  width: 150px !important;
+  max-width: 150px !important;
+  margin: 0.2rem 0 0.1rem 1rem;
 }
 
 .inline-img.left {
   float: left;
-  margin: 0.2rem 1.2rem 1rem 0;
+  width: 180px !important;
+  max-width: 180px !important;
+  margin: 0.2rem 1rem 0.1rem 0;
 }
 
 .text-block::after {
