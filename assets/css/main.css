@@ -4084,3 +4084,25 @@ input, select, textarea {
   display: block;
   clear: both;
 }
+
+.image-text-row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.side-img {
+  width: 260px;
+  max-width: 260px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+
+.image-text-row p {
+  margin: 0;
+  max-width: 700px;
+  line-height: 1.6;
+}
