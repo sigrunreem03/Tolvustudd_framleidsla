@@ -4204,3 +4204,7 @@ input, select, textarea {
   line-height: 1.45;
   overflow-wrap: break-word;
 }
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
