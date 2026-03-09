@@ -4198,3 +4198,9 @@ input, select, textarea {
   transition: transform 0.35s ease;
   margin: 0 !important;
 }
+
+.project-content p {
+  font-size: 0.95em;
+  line-height: 1.45;
+  overflow-wrap: break-word;
+}
