@@ -352,7 +352,8 @@ Geislaskurður var stór þáttur í verkefninu þar sem markmiðið var að bú
 	
 	
 	Þetta myndband sýndi einnig hvernig bæta átti við kerfinu með því að búa
-	til setup og búa til nýtt tól (e. tool) sem hafði kerf width 0.16mm. Nokkrar myndir af þessu má sjá hér að neðan. 
+	til setup og búa til nýtt tól (e. tool) sem hafði kerf width 0.16mm. Nokkrar myndir af þessu má sjá hér að neðan.
+	
 
 	<div style="display: flex; justify-content: center;">
   <div class="design-gallery" style="display: flex; justify-content: center; gap: 12px; flex-wrap: nowrap;">
@@ -370,9 +371,37 @@ Geislaskurður var stór þáttur í verkefninu þar sem markmiðið var að bú
       </div>
       <figcaption><i>Fyrsta tilraun: setup</i></figcaption>
     </figure>
-
+	 
   </div>
 </div>
+	
+			<div style="display: flex; justify-content: center; gap: 60px; margin-top: 30px;">
+	<div class="design-gallery">
+  <figure class="design-figure">
+    <div class="img-wrap">
+      <img src="images/stillingar_kerf1.png" alt="Mynd 1">
+    </div>
+    <figcaption><i>Stillingar í cutting (2d profile): fyrstu sín</i></figcaption>
+  </figure>
+
+  <figure class="design-figure">
+    <div class="img-wrap">
+      <img src="images/Laser_cutter.png" alt="Mynd 2">
+    </div>
+    <figcaption><i>Valið Laser cutter hér</i></figcaption>
+  </figure>
+
+  <figure class="design-figure">
+    <div class="img-wrap">
+      <img src="images/kerf_width.png" alt="Mynd 3">
+    </div>
+    <figcaption><i>Kerf width stillt á 0.16mm</i></figcaption>
+  </figure>
+</div>
+		</div> <!-- image-row -->
+	
+ 
+	
 Eftir þetta fattaði ég að ég hafði valið rangan flöt á teikningunni minni til þess að vera “aðal flöturinn” 
 	ég valdi semsagt þann hluta sem tölvan liggur á (borðið), en það er á ská, svo allt var í línu við það og 
 	á ská líka (við ákveðin halla). Ég fattaði því miður ekki að fara aftur i design (úr manufacture) og 
@@ -417,11 +446,30 @@ Eftir þetta fattaði ég að ég hafði valið rangan flöt á teikningunni min
 	Myndirnar fyrir ofan sýna aðra tilraun á því að fletja hlutinn út ásamt simulation 
 	tólinu, sem sýnir hvernig geislinn mun skera út hlutinn. Einnig má sjá nærmynd af því þótt
 	hún sjáist ekki rosalega vel.
+	
+<section>
+  <h5>Fusion líkan</h5>
+  <p>
+    Hér má skoða 3D líkanið gagnvirkt. Hægt er að snúa því, færa til og zooma inn til að skoða smáatriði betur:
+  </p>
+
+  <div style="margin: 1.5em 0;">
+    <iframe
+      title="3D líkan í Fusion viewer"
+      src="https://a360.co/4dcto29"
+      width="100%"
+      height="650"
+      style="border: none;"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
 
 <p style="margin-top: 30px;">
-Þá gat ég loksins eftir langa og stranga vinnu í fusion fært þetta yfir í inkscape með því að fylgja myndbandinu hans <a href="https://www.youtube.com/watch?v=D1Btaqhog9E" target="_blank" rel="noopener">Jón Þórs</a>. 
+  <h5>Inkscape vinna</h5>
+Eftir að hönnunin og setupið var klárt gat ég loksins eftir langa og stranga vinnu í Fusion fært þetta yfir í Inkscape með því að fylgja myndbandinu hans <a href="https://www.youtube.com/watch?v=D1Btaqhog9E" target="_blank" rel="noopener">Jón Þórs</a>. 
 Þá var það bara að búa til group fyrir hvern og einn hlut, stækka síðan vinnusvæðið (500x500) í document properties og raða hlutunum 
-saman. Eftir það slökkti ég á group og fór að vinna í fill and stroke stillingunum. Þær stillti ég eftirfarandi, eða nákvæmlega eins og fyrir límmiðann:
+saman. Eftir það slökkti ég á group og fór að vinna í fill and stroke stillingunum. Þær stillti ég eftirfarandi, eða nákvæmlega eins og fyrir kanmmiðann:
 Fill: no paint
 Stroke style: flat colour (rauður)
 Stroke Width: 0,02mm
