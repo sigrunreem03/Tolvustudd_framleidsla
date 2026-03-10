@@ -4208,3 +4208,37 @@ input, select, textarea {
 .project-grid {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5em;
+  margin-top: 2em;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project-card {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  padding: 1.5em;
+}
+
+@media screen and (max-width: 980px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
