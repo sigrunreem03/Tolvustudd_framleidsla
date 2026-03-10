@@ -4175,7 +4175,7 @@ input, select, textarea {
 
 .project-image {
   width: 100%;
-  height: 320px;
+  height: 350px;
   object-fit: cover;
   display: block;
   transition: transform 0.35s ease;
@@ -4186,7 +4186,7 @@ input, select, textarea {
 }
 
 .project-content {
-  padding: 1em 1.2em 1.1em 1.2em;
+  padding: 0.8em 1.1em 1em 1.1em;
 }
 
 .project-content h3 {
