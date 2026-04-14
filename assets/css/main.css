@@ -4258,3 +4258,15 @@ input, select, textarea {
   object-fit: contain;
   display: block;
 }
+
+.video-wrap {
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.video-wrap video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
