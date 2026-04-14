@@ -4244,4 +4244,17 @@ input, select, textarea {
   display: block;
 }
 
+.four-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1300px;
+  margin: 30px auto;
+}
 
+.four-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+}
