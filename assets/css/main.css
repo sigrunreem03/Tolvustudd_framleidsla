@@ -4260,8 +4260,11 @@ input, select, textarea {
 }
 
 .video-wrap {
+  width: 100%;
   max-width: 650px;
   margin: 30px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .video-wrap video {
