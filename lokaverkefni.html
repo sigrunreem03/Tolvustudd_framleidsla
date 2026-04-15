@@ -417,366 +417,38 @@ Lappirnar voru líklegast einfaldastar þ.s. einungis var notað 2d contour fyri
 	að skrúfa krossviðsplötuna við stóra plötu í fræsaranum svo hún myndi ekki færast neitt.
 	Síðan tók leiðbeinandi okkar við, fór yfir stillingar í fusion og tengdi við fræsarann.
 	Þegar við framkvæmdum testið kom í ljós að leiðbeinandi okkar hafi óvart stillt á 10 sinnum meiri hraða 
-	í fræsaranum og það sem átti að taka 30 mínútur tók bara um 3 mínútur. Einnig gleymdist
+	í fræsaranum og það sem átti að taka 30 mínútur tók bara um 3 mínútur. Ásamt því gleymdist að stilla 
+	á multiple depths í 2d contour stillingunum. Einnig gleymdist
 	að bæta við tabs sem var í raun stórhættulegt þ.s. hluturinn hefði getað flogið upp
 	úr fræsaranum. Krossviðsplatan sem var skrúfuð niður byrjaði einnig að sveigja upp þegar
-	fræsarinn var við vinnu og þá þurfti að stoppa hann og skrúfa hana betur niður. Þetta er brot
-	af þeim áskorunum sem við þurftum að takast á við þegar við prófuðum að fræsa í fyrsta skipti. 
+	fræsarinn var við vinnu og þá þurfti að stoppa hann og skrúfa hana betur niður. 
+	Þetta er brot af þeim áskorunum sem við þurftum að takast á við þegar við prófuðum að fræsa í fyrsta skipti. 
 	Maður lærir alltaf af mistökum og við, sem og leiðbeinandi okkar pössuðum vel upp á alla
-	þessa hluti eftir þessa prófun. Myndir af prótótípunni má sjá hér að neðan og þegar skarplega er
+	þessa hluti eftir þessa prófun. Myndir af prótótýpunni má sjá hér að neðan og þegar skarplega er
 	athugað sést að engir tabsar eru sýnilegir. 
-	
-	
-	
-	
-	
-<div style="display: flex; justify-content: center; gap: 60px; margin-top: 30px;">
-  <div class="image-row">
 
-    <figure style="width: 25%; text-align: center;">
-      <img src="images/kerf_sker_st.png" alt="Mynd 1" style="width:100%;" />
-      <figcaption style="font-size: 0.8em; margin-top: 8px;">
-        <i>Laser skerinn búinn að vinna</i>
-      </figcaption>
-    </figure>
-
-    <figure style="width: 25%; text-align: center;">
-      <img src="images/kerf_mal1.png" alt="Mynd 2" style="width:100%;" />
-      <figcaption style="font-size: 0.8em; margin-top: 8px;">
-        <i>Mælingar með skífmáli</i>
-      </figcaption>
-    </figure>
-
-    <figure style="width: 25%; text-align: center;">
-      <img src="images/kerf_mal2.png" alt="Mynd 3" style="width:100%;" />
-      <figcaption style="font-size: 0.8em; margin-top: 8px;">
-        <i>Mælingar með skífmáli</i>
-      </figcaption>
-    </figure>
-
-  </div> <!-- image-row -->
-</div>
-	
-	
-	Í síðasta skrefi þessa hluta var bilið mælt með skífmáli og niðurstöðunni síðan deilt með 10. 
-	Lengd kubbana mældist sem L = 13,46 cm en gatið mældist sem L = 13,3 cm svo þá fæst
-	<div style="text-align: center; margin-top: 12px;">
-  <p style="font-size: 1.1em; font-style: italic; margin: 0;">
-    (13,46 − 13,3) / 10 = 0,016 cm = 0,16 mm
-  </p>
-</div>
-	<p style="margin-top: 30px;">
-	Niðurstaðan sýndi að þvermál geislans fyrir akrílinn var þá 0,16 mm. Þessi tala er 
-		notuð sem viðmið þegar kerfið er sett upp fyrst í Fusion. 
-		
-		
-		<h5 style="margin-top: 20px;">Hönnun</h5>
-								Ég byrjaði á því að teikna lappirnar í Fusion sem má sjá hér að neðan en komst síðan að því að parametrarnir 
-								væru ekki að virka í rótinni (e. root), þar sem ég bjó til components og parametrarnir virkuðu bara í hverju og einu componenti. 
-								Ég reyndi að laga þetta svo ég þyrfti ekki að byrja aftur en ég komst
-	                            því miður ekki að lausn. Því þurfti ég að byrja aftur og sleppa því að búa alltaf til “new component” og gera bara sketch í staðinn. 
-								Þá virkaði þetta sem betur fer, en tók því miður dálítið langan tíma að fatta þessi mistök. Fyrir neðan má sjá 
-								myndir af hverjum parti sem bætist síðan við, ásamt parametra stillingum. 
-<div style="display: flex; justify-content: center; gap: 60px; margin-top: 30px;">
-	<div class="design-gallery">
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/Lappir_mynd.png" alt="Mynd 1">
-    </div>
-    <figcaption><i>Fyrsta teikning: lappir</i></figcaption>
-  </figure>
-
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/Bor%C3%B0_mynd.png" alt="Mynd 2">
-    </div>
-    <figcaption><i>Önnur teikning: plata/borð fest á lappir</i></figcaption>
-  </figure>
-
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/undirstöður_mynd.png" alt="Mynd 3">
-    </div>
-    <figcaption><i>þriðja teikning: undirstöður</i></figcaption>
-  </figure>
-</div>
-		</div> <!-- image-row -->
-	
-	
-		<div style="display: flex; justify-content: center; margin-top: 30px;">
+			<div style="display: flex; justify-content: center;">
 <div class="image-row">
-  <figure style="width: 70%; text-align: center;">
-    <img src="images/parametrar_mynd.png" alt="Lokaútkoma" style="width:100%;" />
+  <figure style="width: 80%; text-align: center;">
+    <img src="images/test_utkoma.jpeg" alt="Lokaútkoma" style="width:100%;" />
     <figcaption style="font-size: 0.9em; margin-top: 10px;">
-      <i>Parametra stillingar í Modify: change parameters</i>
+      <i>Prótótýpa ný komin úr fræsara; engir tabsar</i>
     </figcaption>
   </figure>
 	</div> <!-- image-row -->
 </div>	
 	
-	
-	
-<p style="margin-top: 20px;">								
 
-	<p style="margin-bottom: 15px;">
-  Eftir þetta fór ég að fletja tölvustandinn út með því að fylgja þessu myndbandi:
-</p>
+	<p style="margin-top: 30px;">	
 
-<div style="position: relative; width: 100%; max-width: 800px; margin: 0 auto 30px auto; padding-bottom: 56.25%; height: 0;">
-  <iframe
-    src="https://www.youtube.com/embed/https://www.youtube.com/watch?v=D1Btaqhog9E&list=PLKOxluKQR2PLucnLX6aH98TfmjZO_TJWj&index=2"
-    title="YouTube video player"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
-	
-	
-	Þetta myndband sýndi einnig hvernig bæta átti við kerfinu með því að búa
-	til setup og búa til nýtt tól (e. tool) sem hafði kerf width 0.16mm. Nokkrar myndir af þessu má sjá hér að neðan.
-	
-
-	<div style="display: flex; justify-content: center;">
-  <div class="design-gallery" style="display: flex; justify-content: center; gap: 12px; flex-wrap: nowrap;">
-    
-    <figure class="design-figure" style="width: 300px; margin: 0; text-align: center;">
-      <div class="img-wrap">
-        <img src="images/Leggja_flatt_mynd.PNG" alt="Mynd 2" style="width: 100%; height: 230px; object-fit: contain;">
-      </div>
-      <figcaption><i>Fyrsta tilraun: fletja út tölvustand</i></figcaption>
-    </figure>
-
-    <figure class="design-figure" style="width: 300px; margin: 0; text-align: center;">
-      <div class="img-wrap">
-        <img src="images/setup_settings.PNG" alt="Mynd 3" style="width: 100%; height: 230px; object-fit: contain;">
-      </div>
-      <figcaption><i>Fyrsta tilraun: setup</i></figcaption>
-    </figure>
-	 
-  </div>
-</div>
-	
-			<div style="display: flex; justify-content: center; gap: 60px; margin-top: 30px;">
-	<div class="design-gallery">
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/stillingar_kerf1.png" alt="Mynd 1">
-    </div>
-    <figcaption><i>Stillingar í cutting (2d profile): fyrstu sýn</i></figcaption>
-  </figure>
-
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/Laser_cutter.png" alt="Mynd 2">
-    </div>
-    <figcaption><i>Valið Laser cutter hér</i></figcaption>
-  </figure>
-
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/kerf_width.png" alt="Mynd 3">
-    </div>
-    <figcaption><i>Kerf width stillt á 0.16mm</i></figcaption>
-  </figure>
-</div>
-		</div> <!-- image-row -->
-	
- 
-	
-Eftir þetta fattaði ég að ég hafði valið rangan flöt á teikningunni minni til þess að vera “aðal flöturinn” 
-	ég valdi semsagt þann hluta sem tölvan liggur á (borðið), en það er á ská, svo allt var í línu við það og 
-	á ská líka (við ákveðin halla). Ég fattaði því miður ekki að fara aftur i design (úr manufacture) og 
-	leita af tímalínunni, eða hreinlega vissi ekki að það væri hægt eftir að maður fór í manufacture flipann. Ég reyndi
-    mjög lengi að finna út úr því hvernig ég gæti lagað þetta en það endaði með því að ég byrjaði ALVEG frá grunni
-	á teikningunni aftur, þar sem ég bjó ekki til copy áður en ég fletti úr hlutnum (mjög stór mistök).
-    Þetta er eitt af mistökum þessa verkefnis en svona lærði ég bara betur 
-	á hugbúnaðinn og var miklu fljótari að teikna þetta í annað sinn. Síðan komst ég eiginlega strax að því að þess þurfti ekki, 
-	en það var ekki aftur snúið. 
-	<p style="margin-top: 30px;">
-
-	Þegar ég var loksins búin að teikna hlutinn upp á nýtt þá leit þetta svona út, þegar búið var að fletja úr hlutnum í 
-		annað sinn. Hér sést að annar hlutur var valinn sem viðmið, hlutur sem var beinn en ekki við ákveðin halla.
+<header>
+<h4>Loka fræsing</h4>
+</header>
 		
-<div style="display: flex; justify-content: center; gap: 60px; margin-top: 30px;">
-	<div class="design-gallery">
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/flatt_ut_nytt.PNG" alt="Mynd 1">
-    </div>
-    <figcaption><i>Önnur tilraun: fletja út tölvustand</i></figcaption>
-  </figure>
+Þegar búið var að læra af mistökum í prufukeyrslunni var hafist handa við það 
+		að skera út hlutinn okkar í fallegri viðarplötu. Við vorum svo heppnar að fá 
+	fallega furu plötu til þess
 
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/Simulation_nytt.PNG" alt="Mynd 2">
-    </div>
-    <figcaption><i>Önnur tilraun: simulation</i></figcaption>
-  </figure>
-
-  <figure class="design-figure">
-    <div class="img-wrap">
-      <img src="images/laser_sker_mynd.PNG" alt="Mynd 3">
-    </div>
-    <figcaption><i>önnur tilraun: hvernig kerfið virkar</i></figcaption>
-  </figure>
-</div>
-		</div> <!-- image-row -->	
-	
-<p style="margin-top: 30px;">
-	
-	Myndirnar fyrir ofan sýna aðra tilraun á því að fletja hlutinn út ásamt simulation 
-	tólinu, sem sýnir hvernig geislinn mun skera út hlutinn. Einnig má sjá nærmynd af því þótt
-	hún sjáist ekki rosalega vel.
-	
-<section>
-  <h5>Fusion líkan</h5>
-  <p>
-    Hér má skoða tvö 3D líkön í Fusion. Annað þeirra er samsetningin (geirneglt módel) og hitt er flatt út. Hægt er að snúa þeim, færa til og zooma inn til að skoða smáatriði betur.
-  </p>
-</section>
-
-	
-<div style="display: flex; gap: 20px; margin: 1.5em 0; align-items: flex-start;">
-  
-  <div style="flex: 1; min-width: 0;">
-    <p><strong>Samsetning</strong></p>
-    <iframe
-      title="Samsetning í Fusion viewer"
-      src="https://a360.co/4dcto29"
-      width="100%"
-      height="350"
-      style="border: none;"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <div style="flex: 1; min-width: 0;">
-    <p><strong>Flatt út</strong></p>
-    <iframe
-      title="Flatt út líkan í Fusion viewer"
-      src="https://a360.co/4ujT5E8"
-      width="100%"
-      height="350"
-      style="border: none;"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-</div>
-<p style="margin-top: 30px;">
-	
-  <h5>Inkscape vinna</h5>
-	Eftir að hönnunin og setupið var klárt gat ég loksins eftir langa og stranga vinnu í Fusion fært þetta yfir í Inkscape með því að fylgja myndbandinu hans <a href="https://www.youtube.com/watch?v=D1Btaqhog9E" target="_blank" rel="noopener">Jón Þórs</a>. 
-Hér fyrir neðan má sjá eftirfarandi skref í Inkscape:
-								<ul>
-									<li>Stækkaði vinnusvæðið (500mmx500mm) í document properties.</li>
-									<li>Bjó til group fyrir hvern og einn hlut.</li>
-									<li>Raðaði hlutunum á vinnusvæðið.</li>
-									<li>Tók hlutina úr group (ungroup).</li>
-									<li>Breytti síðan stroke og fill stillingunum, eftirfarandi:</li>
-								</ul>
-
-								<ol style="padding-left: 50px;">
-									<li>Fill: no paint</li>
-									<li>Stroke paint: Flat color</li>
-									<li>Stroke style: width = 0.02 mm</li>
-								</ol>	
-
-	
-  <h5>Prófun</h5>
-Næst saveaði ég þetta sem svg og fór að gera test!
-
-Ég bjó til nýtt copy af fusion skjalinu sem var flatt út og fór að vinna í því. Ég bjó til eins litla hluti og ég gat,
-	sem innihéldu tengipunktana sem ég þurfti að prófa áður en ég skar út heilu partana. Tengingarnar sem tölvustandurinn
-	notaði voru press fit og finger-tengingar. Myndir af þessum tengingum má sjá hér að neðan, ásamt test pörtunum í Fusion.
-	
-							
-							
-	<p style="margin-top: 20px;">	
-		<div style="display: flex; justify-content: center; margin-top: 30px;">
-<div class="image-row">
-  <figure style="width: 50%; text-align: center;">
-    <img src="images/tengingar.png" alt="Lokaútkoma" style="width:100%;" />
-<figcaption style="font-size: 0.9em; margin-top: 10px;">
-  <i>Samanburður á tengingum: mynd tekin af 
-    <a href="https://fabacademy.org/2025/labs/riidl/students/samrudhi-rovalekar/assignments/week03.html" target="_blank" rel="noopener noreferrer" class="button">
-      Fab Academy
-    </a>
-  </i>
-</figcaption>
-  </figure>
-	</div> <!-- image-row -->
-</div>
-	
-	<section>
-
-  <div style="max-width: 600px; margin: 1.5em auto;">
-  <iframe
-    title="Fusion líkan"
-    src="https://a360.co/4uBV9b1"
-    width="90%"
-    height="320"
-    style="border: none;"
-    allowfullscreen>
-  </iframe>
-</div>
-</section>
-	
-	
- <p style="margin-top: 30px;">
-	
-Ég fylgdi sömu skrefum í Inkscape og ég nefndi fyrir ofan til þess
-	 að gera þetta klárt fyrir geislaskerann. 
-	
-	 <h5>Skurður</h5>
-	   <p>
-		<img src="images/test_skurdur.png" alt="Bollahaldarar" class="inline-img right">
-      Hér má sjá mynd af testinu í laserskeranum. Það þurfti því miður að skera tvisvar sinnum, þar sem 
-		   í fyrstu skar laserskerinn ekki alveg í gegn. Þá var stillingum í tölvu
-		   breytt aðeins og skorið aftur.
-    </p>
-		   <p>
-		<img src="images/test_tilbuid.png" alt="Bollahaldarar" class="inline-img left">
-      Hér má sjá test bitana tilbúna eftir annan skurð í gegn. Þeir litu vel út og prófað var að setja þá saman og athuga hvort
-			   að þeir pössuðu vel saman.
-    </p>
-	
-			   <p>
-		<img src="images/test_fest.png" alt="Bollahaldarar" class="inline-img right">
-      Að lokum sést hér til hægri að test partarnir pössuðu vel saman og þá gerði ég ráð fyrir að kerf 0.16mm 
-				   væri passlegt fyrir skurð á tölvustandinum. Því þurfti ég ekki að gera annað test þar sem þetta passaði fullkomnlega. 
-    </p>
-	
-	<p style="margin-top: 30px;">
-		
-					   <p>
-		<img src="images/inkscape_setup_5mm.PNG" alt="Bollahaldarar" class="inline-img left">
-Þar næst ákvað ég að drífa mig að skera út alla stóru partana! Hér til vinstri má sjá hvernig þetta leit út í Inkscape.
-    </p>
-	
-			
-	<p style="margin-top: 30px;">
-		
-		Ég byrjaði að skera alla partana út en þannig var mál með vexti að ekki allir partarnir skárust 
-		alla leið í gegn. Ég reyndi eins og ég gat að ýta hverjum og einum parti úr akrýlnum en það var því miður ekki
-		hægt. Þá fékk ég leiðsögn frá leiðbeinundum að prófa að setja plötuna aftur í laserskerann og renna aftur í gegn, 
-		en það var frekar erfitt þar sem ég hafði fært til útlínurnar af skurðinum í tölvunni í upphafi. Ég reyndi að láta útlínurnar
-		passa við þær sem ég gerði fyrst með því að líta á útlínurnar sem voru komnar í akrýlinn. 
-		
-					   <p>
-		<img src="images/tolvustandur_brotinn.png" alt="Bollahaldarar" class="inline-img right">
-Eins og sjá má hér til hægri virkaði þetta því miður ekki, þótt skorið var tvisvar sinnum í gegn. Hlutirnir
-						   brotnuðu og voru ekki sléttir á köntunum. Þá var eina í stöðunni að ná í nýja plötu og prófa aftur.
-						  
-    </p>		
-	
-		<p style="margin-top: 30px;">
-			
-		Svo að ég væri viss um að þetta myndi virka og ég væri ekki að eyða óþarfa efni þá var ákveðið að skera
-			hvern part sér (ekki alla í einu) og alla tvisvar í gegn, án þess að færa plötuna í laserskeranum. Stillt var á 
-			meiri hraða í tölvu stillingunum, eða 8% speed þar sem linsan var eitthvað léleg. Þá loks virkaði þetta eftir
-			langa bið!
 			
 	 <h4>Lokaútkoma</h4>		
 	
